@@ -1,0 +1,141 @@
+name: facebook_clon_app
+description: Facebook uygulama UI Klon
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  contained_tab_bar_view: ^0.8.0
+  cached_network_image: ^3.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+  
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    
+    # Facebook & Meta Logo Resim Adresleri
+    - assets/images/facebook_logo/f_logo_RGB-Blue_58.png # facebook logo
+    - assets/images/facebook_logo/meta-g8003afd09_640.png # meta logo
+
+    # Anasafya Temsili İkon Adresleri
+
+      # üst appbar ikon adresleri
+    - assets/images/app_icons/icons8-search-50.png # arama ikonu
+    - assets/images/app_icons/icons8-facebook-messenger-50.png # mesajlar ikonu
+
+      # üst tabBar ikonları resim adresleri
+    - assets/images/app_icons/tabBaricons/icons8-home-48.png
+    - assets/images/app_icons/tabBaricons/icons8-tv-show-50.png
+    - assets/images/app_icons/tabBaricons/icons8-market-48.png
+    - assets/images/app_icons/tabBaricons/icons8-page-properties-report-50.png
+    - assets/images/app_icons/tabBaricons/icons8-notification-50.png
+    - assets/images/app_icons/tabBaricons/icons8-menu-60.png
+
+    - assets/images/app_icons/postAddicons/icons8-image-gallery-48.png
+    - assets/images/app_icons/postAddicons/icons8-instagram-reels-50.png
+    - assets/images/app_icons/postAddicons/icons8-people-64.png
+    - assets/images/app_icons/postAddicons/icons8-live-video-on-60.png
+
+      # gönderi kutusu ikon resim adresleri
+    - assets/images/app_icons/post_icons/icons8-earth-50.png
+    - assets/images/app_icons/post_icons/icons8-ellipsis-60.png
+    - assets/images/app_icons/post_icons/removebg-previewlike.png
+
+    - assets/images/app_icons/post_icons/icons8-facebook-like-48.png
+    - assets/images/app_icons/post_icons/icons8-comments-50.png
+    - assets/images/app_icons/post_icons/icons8-share-48.png
+
+      # tanıyor olabileceğin kişiler kutusu ikon resim adresleri
+    - assets/images/app_icons/people_you_mayKnow_icons/icons8-add-user-48.png
+
+      # Menü sayyfası ikon resim adresleri
+    - assets/images/app_icons/menuPageicon/icons8-page-properties-report-48.png # akışlar ikon resim adresi
+    - assets/images/app_icons/menuPageicon/icons8-search-user-53.png # Arkdaşlarını bul ikon resim adresi
+    - assets/images/app_icons/menuPageicon/icons8-market-64.png # Marketplace ikon resim adresi
+    - assets/images/app_icons/menuPageicon/icons8-laptop-play-video-64.png # Watch ikon resim adresi
+    - assets/images/app_icons/menuPageicon/icons8-time-machine-50.png # Anılar ikon resim adresi
+    - assets/images/app_icons/menuPageicon/icons8-save-64.png # Kaydedilenler ikon resim adresi
+    - assets/images/app_icons/menuPageicon/icons8-flag-48.png # Sayfalar ikon resim adresi
+    - assets/images/app_icons/menuPageicon/shutterstock_1792997581-2-removebg-preview.png # reels ikon resim adresi
+    - assets/images/app_icons/menuPageicon/icons8-star-50.png # Etkinlikler ikon resim adresi
+
+    - assets/images/app_icons/menuPageicon/icons8-helping-hand-50.png # Topluluk kaynakları ikon resim adresi
+    - assets/images/app_icons/menuPageicon/icons8-question-mark-64.png # Yardım ve Destek ikon resim adresi
+    - assets/images/app_icons/menuPageicon/icons8-setting-48.png # Ayaralar ve Gizlilik ikon resim adresi
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
